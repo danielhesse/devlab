@@ -5,7 +5,7 @@ import { AuthorizationGuard } from '../../auth/authorization.guard';
 import { CreateProductInput } from '../inputs/create-product-input';
 import { Product } from '../models/product';
 
-@Resolver(() => Product)
+@Resolver()
 export class ProductsResolver {
   // eslint-disable-next-line prettier/prettier
   constructor(private productsService: ProductsService) { }
