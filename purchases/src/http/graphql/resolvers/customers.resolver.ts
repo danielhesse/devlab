@@ -8,7 +8,6 @@ import { Customer } from '../models/customer';
 
 @Resolver(() => Customer)
 export class CustomersResolver {
-  // eslint-disable-next-line prettier/prettier
   constructor(
     private customersService: CustomersService,
     private purchasesService: PurchasesService,
