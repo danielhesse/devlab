@@ -6,6 +6,11 @@ interface GetByCourseAndStudentIdParams {
   studentId: string;
 }
 
+interface CreateEnrollmentParams {
+  courseId: string;
+  studentId: string;
+}
+
 @Injectable()
 export class EnrollmentsService {
   // eslint-disable-next-line prettier/prettier
@@ -43,6 +48,15 @@ export class EnrollmentsService {
       },
       orderBy: {
         createdAt: 'desc',
+      },
+    });
+  }
+
+  createEnrollment({ studentId, courseId }: CreateEnrollmentParams) {
+    return this.prisma.enrollment.create({
+      data: {
+        studentId,
+        courseId,
       },
     });
   }
