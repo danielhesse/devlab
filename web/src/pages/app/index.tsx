@@ -9,7 +9,7 @@ export function Home({ data }) {
   const { data: me } = useMeQuery();
 
   return (
-    <div>
+    <div className="text-violet-500">
       <h1>Hello World</h1>
 
       <pre>
