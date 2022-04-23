@@ -3,7 +3,7 @@ import Head from "next/head";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { GetProductsQuery, useCreatePurchaseMutation } from "../graphql/generated/graphql";
-import { getServerPageGetProducts, ssrGetProducts } from "../graphql/generated/page";
+import { getServerPageGetProducts, ssrGetProducts } from "../graphql/generated/pagePublic";
 import { withApollo } from "../lib/withApollo";
 
 interface EnrollProps {

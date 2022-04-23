@@ -91,7 +91,8 @@ function Courses() {
                         </div>
                       </div>
                       <div className="ml-5 flex-shrink-0">
-                        <Link href={`/app/courses/${enrollment.course.slug}`}>
+                        {/* <Link href={`/app/courses/${enrollment.course.slug}`}> */}
+                        <Link href={"/app/courses/"}>
                           <a className="px-2 py-1 border border-transparent text-base font-medium rounded-md text-white bg-violet-600 hover:bg-violet-700">
                             Assistir aulas
                           </a>
